@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	string name;
+	
+	cin>> name;
+	int n=name.length();
+	
+	int s=0, p=n-1;
+	
+	while(s<p)
+	{
+		int t;
+		t=name[s];
+		name[s]=name[p];
+		name[p]=t;
+		s++;
+		p--;
+	}
+	
+	cout<<name;
+	
+}
