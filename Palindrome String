@@ -1,0 +1,33 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	string S; 
+	
+	cin>> S;
+	int n=S.length();
+	int x,s=0,p=n-1;
+  
+		while(s < p)
+		{
+			
+			if(S[s] == S[p])
+				{
+					s++;
+					p--;
+					if(s==p || s>p)
+					{
+						cout<<"palindrome";		
+					}
+					continue;
+				}
+				
+			else
+			{
+        cout<<"Not Palindrome";
+				break;
+			}								
+		}	
+}
